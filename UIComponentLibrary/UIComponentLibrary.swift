@@ -21,3 +21,14 @@ public final class UIComponentLibrary {
     }
     
 }
+
+//language: objective-c
+//
+//osx_image: xcode10.2
+//env:
+//matrix:
+//- TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XR'
+//- TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
+//
+//script:
+//- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project UIComponentLibrary.xcodeproj -scheme UIComponentLibrary -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
