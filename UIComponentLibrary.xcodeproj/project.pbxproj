@@ -15,6 +15,7 @@
 		D7C4893A23D97723004B1433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C4893823D97723004B1433 /* Main.storyboard */; };
 		D7C4893C23D97725004B1433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C4893B23D97725004B1433 /* Assets.xcassets */; };
 		D7C4893F23D97725004B1433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C4893D23D97725004B1433 /* LaunchScreen.storyboard */; };
+		D7C4894523D9807D004B1433 /* UIComponentLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C4894423D9807D004B1433 /* UIComponentLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		D7C4893B23D97725004B1433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7C4893E23D97725004B1433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7C4894023D97725004B1433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C4894423D9807D004B1433 /* UIComponentLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				D7C4891723D973C4004B1433 /* UIComponentLibrary.h */,
 				D7C4891823D973C4004B1433 /* Info.plist */,
+				D7C4894423D9807D004B1433 /* UIComponentLibrary.swift */,
 			);
 			path = UIComponentLibrary;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					D7C4891323D973C4004B1433 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					D7C4892223D97640004B1433 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C4894523D9807D004B1433 /* UIComponentLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		D7C4891D23D973C4004B1433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amitG.UIComponentLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		D7C4891E23D973C4004B1433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		D7C4892C23D97640004B1433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIComponentLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		D7C4892D23D97640004B1433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIComponentLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
