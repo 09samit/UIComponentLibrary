@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Amit Garg" => "amitg@ohumhealthcare.com" }
 
-  spec.source        = { :git => "https://github.com/09samit/UIComponentLibrary.git", :tag => "#{spec.version}" }
+  spec.source        = { :git => "https://github.com/09samit/UIComponentLibrary.git", :tag => spec.version }
 
 
 spec.ios.deployment_target = "12.1"
