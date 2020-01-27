@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode10.2
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project UIComponentLibrary.xcodeproj -scheme UIComponentLibrary -sdk $TEST_SDK -destination "platform=iOS Simulator" ONLY_ACTIVE_ARCH=YES
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project UIComponentLibrary.xcodeproj -scheme UIComponentLibrary -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)" ONLY_ACTIVE_ARCH=YES
 - pod lib lint
